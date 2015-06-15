@@ -58,30 +58,3 @@ var minimum = function(lista,pos,n){
         n=lista [pos];
     return minimum(lista,pos-1,n);
 };
-/*
-public void NumMasGrandes(int[] vector, int[] numgran, int idx){
-    // comprobamos que no hemos llegado al final del vector
-    if ( idx < vector.length ){
-        //inicializamos numgran con los dos primeros numeros del vector.
-        //se sobreentiende que numgran es un array de 2 enteros.
-        if ( idx < 2 ){
-            numgran[0] = vector [0];
-            numgran[1] = vector [1];
-            NumMasGrandes(vector, numgran, idx+2);
-        }else{
-            if ( ( vector[idx]> numgran[0] ) && ( vector[idx]> numgran[1] )){
-                if ( numgran[0] < numgran[1] ){
-                    numgran[0] = vector[idx];
-                }else{
-                    numgran[1] = vector[idx];
-                }
-            }else if ( vector[idx]> numgran[0] ){
-                numgran[0] = vector[idx];
-            }else if ( vector[idx]> numgran[1] ){
-                numgran[1] = vector[idx];
-            }else{
-            }
-            NumMasGrandes(vector, numgran, idx+1);
-        }
-    }
-}*/
